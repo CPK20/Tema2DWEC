@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Navegadores y motores</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                Carlos Posadas Kalman
+            </a>
+
+            <div class="navbar-nav">
+                <a class="nav-link active" href="index.html">
+                    Navegadores
+                </a>
+
+                <a class="nav-link" href="interaccion.html">
+                    Interacción
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    
+    <main class="container my-5">
+
+        <h1 class="mb-4">Navegadores y motores</h1>
+
+        <p>
+            En esta página se muestran algunos de los navegadores web más utilizados,
+            sus motores de renderizado y sus motores de JavaScript.
+        </p>
+    <h2 class="mt-5 mb-3">Principales navegadores y sus motores</h2>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered align-middle">
+             <thead class="table-dark">
+                    <tr>
+                        <th>Navegador</th>
+                        <th>Empresa</th>
+                     <th>Motor de renderizado</th>
+                     <th>Motor de JavaScript</th>
+                     <th>¿Basado en Chromium?</th>
+                    </tr>
+            </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Chrome</td>
+                        <td>Google</td>
+                        <td>Blink</td>
+                        <td>V8</td>
+                        <td>Sí</td>
+                    </tr>
+
+                    <tr>
+                        <td>Firefox</td>
+                        <td>Mozilla</td>
+                        <td>Gecko</td>
+                        <td>SpiderMonkey</td>
+                        <td>No</td>
+                    </tr>
+
+                    <tr>
+                        <td>Safari</td>
+                        <td>Apple</td>
+                        <td>WebKit</td>
+                        <td>JavaScriptCore</td>
+                        <td>No</td>
+                    </tr>
+
+                    <tr>
+                        <td>Edge</td>
+                        <td>Microsoft</td>
+                        <td>Blink</td>
+                        <td>V8</td>
+                        <td>Sí</td>
+                    </tr>
+
+                    <tr>
+                        <td>Opera</td>
+                        <td>Opera</td>
+                        <td>Blink</td>
+                        <td>V8</td>
+                        <td>Sí</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>    
+<h2 class="mt-5 mb-3">¿Por qué comparten motores los navegadores mencionados?</h2>
+
+<p>
+    Muchos de los navegadores utilizan motores de renderizado similares porque esto permite aprovechar tecnologías ya desarrolladas y mantener una buena compatibilidad con los estándares web. Chrome, Edge y Opera utilizan
+    Chromium y el motor Blink, Firefox utiliza Gecko y Safari utiliza WebKit, por lo que no todos los navegadores dependen de Chromium. Para los desarrolladores web, esta diversidad hace que tengamos que probar las cosas en distintos navegadores para asegurarnos de que todo funciona correctamente.
+</p>
+<div class="card mt-5">
+    <div class="card-body">
+        <h2 class="card-title">Ejemplo de compatibilidad</h2>
+
+        <h3 class="h5 mt-3">CSS Nesting</h3>
+
+        <p class="card-text">
+            CSS Nesting permite escribir reglas CSS anidadas dentro de otras reglas, de forma similar a cómo se trabaja con preprocesadores como Sass. Su compatibilidad ha sido diferente según el navegador y su versión.
+        </p>
+
+        <p class="card-text">
+            Según Can I Use, Chrome ofrece soporte completo desde la versión 120, Firefox desde la versión 117 y Safari desde la versión 17.2. Por ejemplo, Chrome 119 no tenía soporte completo para esta característica.
+        </p>
+
+        <p class="card-text">
+            Fecha de consulta: 30 de septiembe de 2026.
+        </p>
+
+        <a
+            href="https://caniuse.com/css-nesting"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+        >
+            Consultar Can I Use
+        </a>
+    </div>
+</div>
+    <h2 class="mt-5 mb-3">Reflexión</h2>
+
+<p>
+    Probaría primero la página en Chrome y Firefox porque utilizan motores diferentes y permiten detectar problemas de compatibilidad. 
+    También comprobaría el funcionamiento en Safari, al ser de dispositivos Apple y móviles. De esta forma se pueden detectar diferencias antes de publicar la página.
+</p>
+    </main>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
